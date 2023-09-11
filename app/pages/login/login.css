@@ -1,0 +1,114 @@
+/* login.css */
+
+/* Common styles for all screen sizes */
+body {
+    background-image: url('../../images/Background.png');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+[data-theme="dark"] body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 12, 71, 0.479);
+    z-index: -1;
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(4, 1, 63, 0.514);
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%; /* Use a percentage value for width */
+    max-width: 500px; /* Optionally, set a maximum width */
+    min-width: 300px;
+    height: 70%; /* Allow height to be determined by content */
+}
+
+/* Increase text size */
+.tile p {
+    font-size: 60px;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.input-with-icon {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    padding: 12px;
+}
+
+.input-with-icon input {
+    flex: 1;
+    border: none;
+    color: white;
+    background: transparent;
+    outline: none;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.form-group a {
+    text-align: right;
+    display: block;
+    color: #f1f1f1; /* Default link color for light theme */
+    text-decoration: underline;
+    font-weight:300;
+}
+
+.button{
+    padding-top: 8%;
+}
+
+.loginButton{
+    
+    background-color: transparent;
+    color: white;
+    width: 320px;
+    height: 40px;
+    font-size: larger;
+    border-radius: 0;
+
+}
+
+.signup{
+    padding-top: 7%;
+    color: white;
+}
+
+.signup a{
+    color: white;
+    font-weight:initial
+}
+
+
+
+
+/* Change placeholder text color based on theme */
+[data-theme="dark"] .input-with-icon input::placeholder {
+    color: #ccc; /* Change the placeholder text color for dark theme */
+}
+
+/* For light theme, the default placeholder color will be used */

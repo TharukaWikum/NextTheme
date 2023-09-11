@@ -1,0 +1,10 @@
+body{
+  color: black;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+[data-theme="dark"] body{
+  background-color: black;
+  color: white;
+}
